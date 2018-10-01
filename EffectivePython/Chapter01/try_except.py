@@ -9,5 +9,6 @@ finally:
     handle.close()        # Always runs after try:
 
 
+# This is an easier way to achieve something similar, using a with statement
 with open('example.txt') as f:
     it = (float(x) for x in open('example.txt'))

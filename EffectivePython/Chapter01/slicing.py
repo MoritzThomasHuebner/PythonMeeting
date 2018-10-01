@@ -28,13 +28,14 @@ print('Before ', a)
 a[2:7] = [99, 22, 14]
 print('After  ', a)
 
-#Copying list
+# Copying list
+
 b = a[:]
 assert b == a and b is not a
-
+# This statement is true, because a has the same contents as b, but they are different objects
 
 b = a
 print('Before', a)
 a[:] = [101, 102, 103]
-assert a is b           # Still the same list object
-print('After ', a)      # Now has different contents
+assert a is b  # Still the same list object
+print('After ', a)  # Now has different contents
